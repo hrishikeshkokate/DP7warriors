@@ -1,4 +1,4 @@
-package com.abstractclass;
+/*package com.abstractclass;
 
 abstract class Student {
 	int id;
@@ -74,8 +74,8 @@ class Artstudent extends Student {
 
 	}
 
-	public Artstudent(int id, String name, float fees, String dancetype, int time, String artname, int artprice,) {
-		super(id, name, fees,dancetype,time);
+	public Artstudent(int id, String name, float fees, String artname, int artprice) {
+		super(id, name, fees);
 		this.artname = artname;
 		this.artprice = artprice;
 
@@ -89,6 +89,7 @@ class Artstudent extends Student {
 	}
 
 }
+
 class Musicstudent extends Student {
 	private String musicname;
 	private float musicLength;
@@ -97,7 +98,7 @@ class Musicstudent extends Student {
 
 	}
 
-	public Musicstudent(int id, String name, float fees, String artname, int artprice,String musicname,float musicLength) {
+	public Musicstudent(int id, String name, float fees, String musicname, float musicLength) {
 		super(id, name, fees);
 		this.musicname = musicname;
 		this.musicLength = musicLength;
@@ -113,16 +114,16 @@ class Musicstudent extends Student {
 
 }
 
-
-
 public class Classes {
 
 	public static void main(String[] args) {
 
-		Musicstudent m = new Musicstudent(101, "Hrishikesh", 55000, "Drawing", 6);
-		m.display();
-		m.description();
+		Student s;
+		s = new Musicstudent(101, "Hrishikesh", 55000, "Drawing", 6);
+		s.display();
+		s.description();
 
 	}
 
 }
+*/
