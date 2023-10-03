@@ -20,14 +20,15 @@ class PrivateLocker implements Locker {
 		this.money = 0.0;
 		this.jewelry = "";
 		this.pinCode = pinCode;
-		this.locked = true;
+		this.locked = false;
+		//this.locked = true;
 	}
 
 	@Override
 	public void depositMoney(double amount) {
 		if (!locked) {
 			this.money += amount;
-			System.out.println("Deposited money: $" + amount);
+			System.out.println("Deposited money: " + amount);
 		} else {
 			System.out.println("Locker is locked. Cannot deposit money.");
 		}
@@ -47,7 +48,7 @@ class PrivateLocker implements Locker {
 	public boolean withdrawMoney(double amount, String pinCode) {
 		if (!locked && this.pinCode.equals(pinCode) && amount <= this.money) {
 			this.money -= amount;
-			System.out.println("Withdrawn money: $" + amount);
+			System.out.println("Withdrawn money: " + amount);
 			return true;
 		} else {
 			System.out.println("Cannot withdraw money. Locker is locked or pin code is incorrect.");
@@ -71,7 +72,7 @@ class PrivateLocker implements Locker {
 
 	public void displayContents() {
 		if (!locked) {
-			System.out.println("Money: $" + money);
+			System.out.println("Money: " + money);
 			System.out.println("Jewelry: " + jewelry);
 		} else {
 			System.out.println("Locker is locked. Contents not accessible.");
