@@ -29,6 +29,7 @@ public class WrapperDemo {
 		float f3=f1;
 		
 		System.out.println(f1+" "+f2+" "+f3);
+		
 	}
 
 }
