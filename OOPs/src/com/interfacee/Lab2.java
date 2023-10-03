@@ -1,40 +1,49 @@
 package com.interfacee;
 
-interface Engine {
+interface Engine 
+{
 	void condition();
 }
 
-interface Vehicle {
+interface Vehicle
+{
 	void start();
 }
 
-class Car3 implements Engine, Vehicle {
+class Car3 implements Engine, Vehicle 
+{
 	private String engineCondition;
 
-	public Car3(String engineCondition) {
+	public Car3(String engineCondition) 
+	{
 		this.engineCondition = engineCondition;
 	}
 
 	@Override
-	public void condition() {
+	public void condition() 
+	{
 		System.out.println("Engine is in " + engineCondition + " condition.");
 	}
 
 	@Override
-	public void start() {
+	public void start() 
+	{
 		System.out.println("Car has started.");
 	}
 }
 
-class Supercar extends Car3 implements Engine, Vehicle {
+class Supercar extends Car3 implements Engine, Vehicle
+{
 	private String superCarFeature;
 
-	public Supercar(String engineCondition, String superCarFeature) {
+	public Supercar(String engineCondition, String superCarFeature) 
+	{
 		super(engineCondition);
 		this.superCarFeature = superCarFeature;
 	}
 
-	public void showSuperCarFeature() {
+	public void showSuperCarFeature()
+	{
 		System.out.println("SuperCar feature: " + superCarFeature);
 	}
 }
