@@ -15,7 +15,7 @@ public class Secondhighestnumber {
 				max1 = i;
 			}
 		}
-		System.out.println("The 2nd highest maximum number is :" + max1);
+		System.out.println("The 2nd highest number is :" + max1);
 	}
 	static void findsecondlessnum(int arr[], int min, int min1) 
 	{

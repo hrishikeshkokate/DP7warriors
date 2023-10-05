@@ -6,9 +6,7 @@ public class Alternatemerge {
 	static int[] mergearray(int arr1[],int arr2[])
 	{
 		int mar[]=new int[arr1.length+arr2.length];
-		
 		int index=0;
-		
 		int maxlength=Math.max(arr1.length,arr2.length);
 		
 		for(int i=0;i<maxlength;i++)
@@ -26,7 +24,6 @@ public class Alternatemerge {
 		}
 		return mar;
 	}
-
 	public static void main(String[] args) {
 		
 		int arr1[]= {1,2,3,4};
