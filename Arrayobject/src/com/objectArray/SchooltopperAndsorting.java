@@ -73,7 +73,7 @@ public class SchooltopperAndsorting
 		for (int i = 0; i < stud.length; i++) 
 		{
 			for (int j = i + 1; j < stud.length; j++)
-{
+             {
 				if (stud[i].getMarks() < stud[j].getMarks()) 
 				{
 					st = stud[i];
