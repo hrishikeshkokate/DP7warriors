@@ -1,6 +1,6 @@
 package com.twodarray;
 
-public class Shuffle2d {
+public class rowtocolumn2d {
 	
 	static void transposeArray(int arr[][])
 	{

@@ -18,9 +18,7 @@ public class MaxMinincolumn2d {
 		}
 	}
 	
-	{
-		
-	}
+	
 
 	public static void main(String[] args) {
 		int arr[][] = { { 22, 31, 9 }, { 12, 25, 16 } };

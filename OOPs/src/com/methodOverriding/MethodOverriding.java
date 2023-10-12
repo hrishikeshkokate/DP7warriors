@@ -1,7 +1,7 @@
 package com.methodOverriding;
 
 class Person {
-	void display() {
+     void display() {
 		System.out.println("I am person");
 
 	}
