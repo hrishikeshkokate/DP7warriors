@@ -33,18 +33,25 @@ public class Sortlexograpgically {
 			for(int j=i+1;j<str.length;j++)
 			{
 				
-				if(str[i].length()>(str[j].length()))
+				if(str[i].length()==(str[j].length()))
 				{
+					if(str[i].compareTo(str[j])>0)
+					{
 					String temp = str[i];
 					str[i] = str[j];
 					str[j] = temp;
+					}
 					
 				}
-				else if(str[i].compareTo(str[j])>str.length)
+				else 
+					{
+					if(str[i].length()>(str[j].length()))
+					
 				{
 					String temp = str[i];
 					str[i] = str[j];
 					str[j] = temp;
+				}
 				}
 				}
 			}
@@ -56,14 +63,14 @@ public class Sortlexograpgically {
 		String str[] = { "java", "python", "sql", "cpp", "c", "angular", "html","devops" };
 		System.out.println("Before :" + Arrays.toString(str));
 
-		sort(str);
+		//sort(str);
 
-		System.out.println("Lexo :" + Arrays.toString(str));
+		//System.out.println("Lexo :" + Arrays.toString(str));
 		
-		//sortlengthlexo(str);
-		sortlength(str);
+		sortlengthlexo(str);
+		//sortlength(str);
 		
-		System.out.println("Lenth :"+Arrays.toString(str));
+		//System.out.println("Lenth :"+Arrays.toString(str));
 
 	}
 
