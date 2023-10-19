@@ -7,7 +7,7 @@ public class Duplicateword {
 		
 		for(int i=0;i<str.length;i++)
 		{
-			if(str[i].equals("Visisted"))
+			if(str[i].equals("Visited"))
 			{
 				continue;
 			}
@@ -17,14 +17,13 @@ public class Duplicateword {
 				if(str[i].equalsIgnoreCase(str[j]))
 				{
 					count++;
-					str[j]="visited";
+					str[j]="Visited";
 				}
 			}
 			if(count>1)
 			{
 				System.out.println(str[i]);
 			}
-			
 		}
 	}
 
@@ -36,7 +35,5 @@ public class Duplicateword {
 		
 		findmaxword(str);
 		
-
 	}
-
 }

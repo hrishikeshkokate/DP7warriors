@@ -61,7 +61,7 @@ public class Sortlexograpgically {
 	public static void main(String[] args) {
 
 		String str[] = { "java", "python", "sql", "cpp", "c", "angular", "html","devops" };
-		System.out.println("Before :" + Arrays.toString(str));
+		//System.out.println("Before :" + Arrays.toString(str));
 
 		//sort(str);
 
@@ -70,7 +70,7 @@ public class Sortlexograpgically {
 		sortlengthlexo(str);
 		//sortlength(str);
 		
-		//System.out.println("Lenth :"+Arrays.toString(str));
+		System.out.println("Length :"+Arrays.toString(str));
 
 	}
 

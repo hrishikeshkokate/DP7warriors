@@ -8,7 +8,7 @@ public class Frequencyofword {
 		
 		for(int i=0;i<str.length;i++)
 		{
-			if(str[i].equals("Visisted"))
+			if(str[i].equals("Visited"))
 			{
 				continue;
 			}
