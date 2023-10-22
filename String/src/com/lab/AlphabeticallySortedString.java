@@ -6,7 +6,7 @@ public class AlphabeticallySortedString {
 	static void sort(String s) {
 		boolean flag = true;
 		
-		for (int k = ; k < s.length(); k++)
+		for (int k =1 ; k < s.length(); k++)
 		{
 			String str[] = s.split(s);
 
