@@ -13,6 +13,7 @@ public class SortArrayList {
 					int temp=list.get(i);
 					list.set(i, list.get(j));
 					list.set(j, temp);
+					
 				}
 			}
 			System.out.println(list.get(i));
