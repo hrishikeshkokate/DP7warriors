@@ -20,12 +20,14 @@ public class BookTest {
 		{
 			System.out.println(b);
 		}
+		System.out.println("------------------------------");
 		
 		Collections.sort(b1,new NameComparator());
 		for(Book b:b1)
 		{
 			System.out.println(b);
 		}
+		System.out.println("------------------------------");
 		
 		Collections.sort(b1,new PriceComparator());
 		for(Book b:b1)

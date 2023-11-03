@@ -16,7 +16,7 @@ public class EmployeeSort {
 		i1.add(new Employee(105,"Pralay",55000));
 		i1.add(new Employee(106,"Vishal",64000));
 		
-		Collections.sort(i1);
+		Collections.sort(i1,Collections.reverseOrder());
 		for(Employee e:i1)
 		{
 			System.out.println(e);

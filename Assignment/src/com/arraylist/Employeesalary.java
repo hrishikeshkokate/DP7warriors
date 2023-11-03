@@ -77,6 +77,7 @@ public class Employeesalary {
 				highestSalaryEmp = emp;
 			}
 		}
+		
 
 		System.out.println("Employee with the highest salary:");
 		System.out.println(highestSalaryEmp);

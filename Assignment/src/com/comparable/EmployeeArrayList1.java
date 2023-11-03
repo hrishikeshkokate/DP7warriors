@@ -35,11 +35,16 @@ class Employee2 implements Comparable<Employee2> {
 	@Override
 	public int compareTo(Employee2 other) {
 		
-		if (this.id < other.id) {
+		if (this.id < other.id) 
+		{
 			return -1;
-		} else if (this.id > other.id) {
+		} 
+		else if (this.id > other.id) 
+		{
 			return 1;
-		} else {
+		} 
+		else 
+		{
 			return 0;
 		}
 	}

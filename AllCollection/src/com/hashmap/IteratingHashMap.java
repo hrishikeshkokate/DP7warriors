@@ -29,7 +29,7 @@ public class IteratingHashMap {
 
 		for (String s : keys) 
 		{
-			System.out.println(s + "-->" + hm.get(s));
+			System.out.println(s+ "-->" + hm.get(s));
 		}
 
 		// 3rd way
@@ -68,3 +68,5 @@ public class IteratingHashMap {
 		}
 	}
 }
+
+
