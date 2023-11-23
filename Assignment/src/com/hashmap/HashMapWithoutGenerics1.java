@@ -2,7 +2,7 @@ package com.hashmap;
 
 import java.util.HashMap;
 
-public class HashMapWithoutGenerics {
+public class HashMapWithoutGenerics1 {
 
     public static void main(String[] args) {
        

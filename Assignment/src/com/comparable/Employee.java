@@ -1,6 +1,6 @@
 package com.comparable;
 
-class Employee {
+class Employee implements Comparable<Employee> {
 	private String name;
 	private String designation;
 	private int age;
@@ -27,4 +27,18 @@ class Employee {
 	public String toString() {
 		return "Employee{" + "name='" + name + '\'' + ", designation='" + designation + '\'' + ", age=" + age + '}';
 	}
+
+	@Override
+	public int compareTo(Employee e) {
+		if(this.getAge()==e.getAge())
+			return this.getName().compareTo(e.getName());
+			else
+				if(this.getAge()>e.getAge())
+					return 1;
+				else
+					return -1;
+	}
+	
+	
+	
 }

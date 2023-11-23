@@ -11,7 +11,7 @@ public class StudentMain {
 		st.add(new Student(9, "Akshay", 23));
 		st.add(new Student(7, "Kailash", 65));
 		st.add(new Student(2, "Vishal", 31));
-		st.add(new Student(4, "Hrishikesh", 23));
+		st.add(new Student(4, "Suraj", 23));
 		
 		
 		Collections.sort(st, new NameComparator()); // use custom sorting logic on inbuilt classes

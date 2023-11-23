@@ -31,24 +31,37 @@ class Employee2 implements Comparable<Employee2> {
 	public int getId() {
 		return id;
 	}
-
+//	@Override
+//	public int compareTo(Employee2 other) {
+//
+//		if (this.id < other.id) {
+//			return -1;
+//		} else if (this.id > other.id) {
+//			return 1;
+//		} else {
+//			return 0;
+//		}
+//	}
+	//Descending sort
+//	@Override
+//	public int compareTo(Employee2 other) {
+//
+//		if (this.id > other.id) {
+//			return -1;
+//		} else if (this.id > other.id) {
+//			return 1;
+//		} else {
+//			return 0;
+//		}
+//	}
 	@Override
-	public int compareTo(Employee2 other) {
-		
-		if (this.id < other.id) 
-		{
-			return -1;
-		} 
-		else if (this.id > other.id) 
-		{
-			return 1;
-		} 
-		else 
-		{
-			return 0;
-		}
-	}
+	public int compareTo(Employee2 e) {
 
+		Integer i=e.getId();
+		Integer j=this.getId();
+		return i.compareTo(j);
+	}
+	
 	@Override
 	public String toString() {
 		return "Employee{" + "name='" + name + '\'' + ", designation='" + designation + '\'' + ", age=" + age + ", id="
@@ -58,20 +71,15 @@ class Employee2 implements Comparable<Employee2> {
 
 public class EmployeeArrayList1 {
 	public static void main(String[] args) {
-		ArrayList<Employee2> employeeList = new ArrayList<>();
+		ArrayList<Employee2> emp = new ArrayList<>();
 
-		// Create and add Employee objects to the ArrayList
-		Employee2 employee1 = new Employee2("Aniket", "Manager", 35, 101);
-		Employee2 employee2 = new Employee2("Suraj", "Engineer", 28, 102);
-		Employee2 employee3 = new Employee2("Kailash", "Designer", 30, 103);
+		emp.add(new Employee2("Aniket", "Manager", 35, 101));
+		emp.add(new Employee2("Suraj", "Engineer", 28, 102));
+		emp.add(new Employee2("Kailash", "Designer", 30, 103));
 
-		employeeList.add(employee1);
-		employeeList.add(employee2);
-		employeeList.add(employee3);
+		Collections.sort(emp);
 
-		Collections.sort(employeeList);
-
-		for (Employee2 employee : employeeList) {
+		for (Employee2 employee : emp) {
 			System.out.println(employee);
 		}
 	}
