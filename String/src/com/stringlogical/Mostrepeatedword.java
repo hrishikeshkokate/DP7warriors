@@ -19,7 +19,7 @@ public class Mostrepeatedword {
 				if(str[i].equals(str[j]))
 				{
 					count++;
-					str[j]="visited";
+					str[j]="Visited";
 				}
 			}
 			if(count>max)

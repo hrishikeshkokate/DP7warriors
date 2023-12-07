@@ -14,7 +14,7 @@ public class Duplicateelements {
 					//arr[j] = '0';
 				}
 			}
-			if(count>1)//if count==1 it will display unique element
+			if(count==1)//if count==1 it will display unique element
 			{
 				System.out.println(arr[i]);
 			}
