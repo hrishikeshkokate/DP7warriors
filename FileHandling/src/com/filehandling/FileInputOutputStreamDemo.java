@@ -67,8 +67,8 @@ public class FileInputOutputStreamDemo {
 		
 		FileInputOutputStreamDemo obj = new FileInputOutputStreamDemo();
 		
-		File f1= new File("D:\\DP7Warriors\\MyFiles\\fileio.txt");
-		obj.writeData(f1);
+		File f1= new File("D:\\DP7Warriors\\MyFiles\\lab.txt");
+		//obj.writeData(f1);
 		obj.readData(f1);
 		
 	}
