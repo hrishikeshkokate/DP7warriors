@@ -1,13 +1,32 @@
 package com.LabAssignment;
 
+class DaemonTask implements Runnable {
+	@Override
+	public void run() 
+	{
+		while (true) 
+		{
+			System.out.println("Daemon thread is running...");
+			try 
+			{
+				Thread.sleep(500);
+			} 
+			catch (InterruptedException e)
+			{
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
 public class DaemonThreadExample4 {
 	public static void main(String[] args) {
 
-		Thread daemonThread = new Thread(new DaemonTask());
+		Thread dt = new Thread();
 
-		daemonThread.setDaemon(true);
+		dt.setDaemon(true);
 
-		daemonThread.start();
+		dt.start();
 
 		try {
 			Thread.sleep(2000); // Sleep for 2 seconds
@@ -17,19 +36,5 @@ public class DaemonThreadExample4 {
 
 		System.out.println("Main thread exiting. Daemon thread is still running.");
 
-	}
-}
-
-class DaemonTask implements Runnable {
-	@Override
-	public void run() {
-		while (true) {
-			System.out.println("Daemon thread is running...");
-			try {
-				Thread.sleep(500);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
 	}
 }

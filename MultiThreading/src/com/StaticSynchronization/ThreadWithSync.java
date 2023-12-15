@@ -1,12 +1,17 @@
 package com.StaticSynchronization;
 
 class Mytable {
-	public static synchronized void printTable(int n) {
-		for (int i = 0; i <= 10; i++) {
+	public static synchronized void printTable(int n) 
+	{
+		for (int i = 0; i <= 10; i++) 
+		{
 			System.out.println(n + "X" + i + "=" + (n * i));
-			try {
+			try 
+			{
 				Thread.sleep(500);
-			} catch (InterruptedException e) {
+			} 
+			catch (InterruptedException e) 
+			{
 				e.printStackTrace();
 			}
 		}

@@ -1,14 +1,5 @@
 package com.LabAssignment;
 
-public class SleepMethodExample7 {
-	public static void main(String[] args) {
-		Thread sleepThread = new Thread(new SleepTask());
-
-		
-		sleepThread.start();
-	}
-}
-
 class SleepTask implements Runnable {
 	@Override
 	public void run() {
@@ -21,5 +12,13 @@ class SleepTask implements Runnable {
 				e.printStackTrace();
 			}
 		}
+	}
+}
+
+public class SleepMethodExample7 {
+	public static void main(String[] args) {
+		Thread sleepThread = new Thread(new SleepTask());
+
+		sleepThread.start();
 	}
 }

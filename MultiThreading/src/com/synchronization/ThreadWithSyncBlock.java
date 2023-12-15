@@ -5,7 +5,8 @@ class TableR {
 
 		System.out.println(Thread.currentThread().getName() + " is started");
 
-		synchronized (this) {
+		synchronized (this) 
+		{
 			for (int i = 0; i <= 10; i++) {
 				System.out.println(n + "x" + i + "=" + (n * i));
 				try {
@@ -15,7 +16,8 @@ class TableR {
 				}
 			}
 		}
-		try {
+		try 
+		{
 			Thread.sleep(500);
 		} catch (Exception e) {
 			System.out.println(e);
