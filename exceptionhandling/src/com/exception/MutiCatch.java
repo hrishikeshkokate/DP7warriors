@@ -33,9 +33,9 @@ public class MutiCatch {
 			System.out.println(e + " - Index is greater");
 		} catch (ArithmeticException e) {
 			System.out.println(e + " - Cannot divide by zero");
-		} catch (Exception e) {
-			System.out.println(e);
-		}
+//		} catch (Exception e) {
+//			System.out.println(e);
+//		}
 
 		finally {
 			System.out.println("---------------------------------");
@@ -45,4 +45,4 @@ public class MutiCatch {
 
 	}
 
-}
+

@@ -1,8 +1,5 @@
 package com.basics;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Alternatesum {
 	static void sum(int arr[])
 	{

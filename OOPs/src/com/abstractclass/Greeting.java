@@ -72,9 +72,11 @@ public class Greeting {
 
 	public static void main(String[] args) {
 		Card b;
+		
 		b=new Birthdaycard();
 		b.show();
 		b.showcard();
+		
 		System.out.println("____________________________");
 		
 		b=new Weddingcard();

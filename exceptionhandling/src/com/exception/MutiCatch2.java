@@ -33,9 +33,7 @@ public class MutiCatch2 {
 			System.out.println(e);
 		}
 
-		catch (Exception e) {
-			System.out.println(e);
-		}
+		
 
 		finally {
 			System.out.println("---------------------------------");

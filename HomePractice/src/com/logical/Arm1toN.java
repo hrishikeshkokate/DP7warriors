@@ -1,7 +1,5 @@
 package com.logical;
 
-import java.util.Scanner;
-
 public class Arm1toN {
 	static void armStrongnumber(int num)
 	{

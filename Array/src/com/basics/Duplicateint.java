@@ -4,19 +4,25 @@ public class Duplicateint {
 	static void findDuplicates(int arr[]) {
 		boolean flag = false;
 		int count = 0;
-		for (int i = 0; i < arr.length - 1; i++) {
+		for (int i = 0; i < arr.length - 1; i++)
+		{
 			count = 1;
 			flag = false;
-			for (int j = i - 1; j >= 0; j--) {
-				if (arr[i] == arr[j]) {
+			for (int j = i - 1; j >= 0; j--)
+			{
+				if (arr[i] == arr[j]) 
+				{
 					 //System.out.println("Duplicate : " + arr[i]);
 					flag = true;
 					break;
 				}
 			}
-			if (flag == false) {
-				for (int k = i + 1; k < arr.length; k++) {
-					if (arr[i] == arr[k]) {
+			if (flag == false)
+			{
+				for (int k = i + 1; k < arr.length; k++)
+				{
+					if (arr[i] == arr[k])
+					{
 						count++;
 					}
 				}

@@ -5,8 +5,8 @@ public class Findpairs {
 	{
 		for(int i=0;i<arr.length;i++)
 		{
-			if(arr[i]==num)
-				continue;
+//			if(arr[i]==num)
+//				continue;
 			for(int j=i+1;j<arr.length;j++)
 			{
 				if(arr[i]+arr[j]==num)

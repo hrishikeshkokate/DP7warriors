@@ -6,6 +6,7 @@ public class Secondhighest2 {
 		int high=Integer.MIN_VALUE;
 		int secondhigh=Integer.MIN_VALUE;
 		
+		
 		for(int i=0;i<arr.length;i++)
 		{
 			if(arr[i]>high)
@@ -21,7 +22,7 @@ public class Secondhighest2 {
 		System.out.println("Second highest number :"+secondhigh);
 	}
 	public static void main(String[] args) {
-		int arr[]= {6,7,10,2,4,9,5};
+		int arr[]= {6,7,10,2,4,9,5,12};
 		highest(arr);
 	}
 }

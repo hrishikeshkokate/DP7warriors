@@ -8,7 +8,7 @@ public class Armstrong1to1700 {
 		int count=0;
 		while(num!=0)
 		{
-			num/=0;
+			num/=10;
 			count++;
 		}
 		int sum=0;
@@ -24,10 +24,20 @@ public class Armstrong1to1700 {
 			num1/=10;
 			
 		}
+		if(sum==num2)
+		{
+			System.out.println(sum);
+		}
+		
 		
 	}
 
 	public static void main(String[] args) {
+		
+		for(int i=1;i<=1700;i++)
+		{
+		armStrong(i);
+		}
 		
 
 	}
