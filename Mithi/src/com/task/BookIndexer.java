@@ -8,16 +8,16 @@ import java.util.regex.*;
 public class BookIndexer {
     public static void main(String[] args) {
         try {
-            // Read exclude words
+           
             Set<String> excludeWords = FileReaderHelper.readExcludeWords("F:\\mithi\\exclude-words.txt");
 
-            // Read pages and index words
+            
             WordIndexer indexer = new WordIndexer(excludeWords);
             indexer.readAndIndexPage("F:\\mithi\\page1.txt", 1);
             indexer.readAndIndexPage("F:\\mithi\\page2.txt", 2);
             indexer.readAndIndexPage("F:\\mithi\\page3.txt", 3);
 
-            // Write the index to the output file
+            
             indexer.writeIndexToFile("F:\\mithi\\index.txt");
         } catch (IOException e) {
             e.printStackTrace();
@@ -84,7 +84,7 @@ class WordIndexer {
             outputLines.add(word + " : " + pagesString);
         }
 
-        // Add special entries at the end
+        
         for (String special : specialEntries) {
             Set<Integer> pages = wordIndex.get(special);
             if (pages != null) {
