@@ -13,7 +13,7 @@ public class Makespaceright {
 
 	public static void main(String[] args) {
 		
-		String s= "I am  hrishikesh   kokate";
+		String s= "I am      hrishikesh      kokate";
 		
 		makeequalspace(s);
 

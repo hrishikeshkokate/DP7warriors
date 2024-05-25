@@ -11,15 +11,18 @@ public class Alternatemerge {
 		
 		for(int i=0;i<maxlength;i++)
 		{
+			if(i%2==0) {
 			if(i<arr1.length)
 			{
 				mar[index]=arr1[i];
 				index++;
 			}
+			}else {
 			if(i<arr2.length)
 			{
 				mar[index]=arr2[i];
 				index++;
+			}
 			}
 		}
 		return mar;
